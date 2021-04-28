@@ -1,0 +1,14 @@
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Business.dll.config
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Business.dll
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Business.pdb
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Data.dll
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\EntityFramework.dll
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Data.pdb
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\Data.dll.config
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\EntityFramework.xml
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\obj\Debug\Business.csprojAssemblyReference.cache
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\obj\Debug\Business.csproj.CopyComplete
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\obj\Debug\Business.dll
+D:\Visual Studio\ASP.NET\HousekeeperManager\Business\obj\Debug\Business.pdb

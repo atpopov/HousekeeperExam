@@ -1,0 +1,91 @@
+﻿@model Data.Model.User
+
+@{
+    ViewBag.Title = "UserCreate";
+}
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Flight Manager</title>
+        <link rel="stylesheet" type="text/css" href="~/Content/reset-css.css">
+        <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+        <link rel="jssheet" href="~/Content/script.js">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar flightm-color">
+
+                <h1 style="float:none; text-align:center"><a href="/Admin/Home">Housekeeper Manager</a></h1>
+                <ul>
+                    <li> <a class="active" style="float:left; margin-left:2%; text-align:center" href="/Admin/Users">Users</a></li>
+                    <li> <a class="active" style="float:left; margin-left:2%; text-align:center" href="/Admin/Tasks">Tasks</a></li>
+                    <li> <a class="active" style="float:left; margin-left:2%; text-align:center" href="/Admin/Locations">Locations</a></li>
+                </ul>
+                <ul>
+                    <li> <a class="active" style="float:right; margin-right:2%; text-align:center">Welcome, Admin!</a></li>
+                    <li> <a class="active" href="/Home/Logout" style="float:right; margin-right:2%; text-align:center">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4 style="text-align:center">Create a new User</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Role, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Role, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+    </body>
